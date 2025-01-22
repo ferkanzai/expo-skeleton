@@ -1,5 +1,5 @@
 import reactLogo from "@/assets/images/partial-react-logo.png";
-import { Image, Platform, StyleSheet } from "react-native";
+import { Image, Platform, StyleSheet, Text } from "react-native";
 
 import { HelloWave } from "@/components/hello-vawe";
 import ParallaxScrollView from "@/components/parallax-scroll-view";
@@ -17,8 +17,8 @@ export default function HomeScreen() {
         />
       )}
     >
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome!</ThemedText>
+      <ThemedView className="items-center flex-row gap-2">
+        <Text className="text-3xl font-bold">Welcome with Tailwind!</Text>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
@@ -75,7 +75,6 @@ export default function HomeScreen() {
 
 const styles = StyleSheet.create({
   titleContainer: {
-    flexDirection: "row",
     alignItems: "center",
     gap: 8,
   },

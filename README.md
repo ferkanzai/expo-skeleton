@@ -1,6 +1,6 @@
 # expo-skeleton
 
-Skeleton with Expo, React Native, Nativewind and i18n for translations.
+Skeleton with Expo, React Native, [Nativewind](https://www.nativewind.dev/) and i18n for translations.
 
 ## ESLint
 
