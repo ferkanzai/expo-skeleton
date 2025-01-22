@@ -1,4 +1,5 @@
 import reactLogo from "@/assets/images/partial-react-logo.png";
+import { useTranslation } from "react-i18next";
 import { Image, Platform, StyleSheet, Text } from "react-native";
 
 import { HelloWave } from "@/components/hello-vawe";
@@ -7,6 +8,8 @@ import { ThemedText } from "@/components/themed-text";
 import { ThemedView } from "@/components/themed-view";
 
 export default function HomeScreen() {
+  const { t } = useTranslation();
+
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
@@ -20,6 +23,13 @@ export default function HomeScreen() {
       <ThemedView className="items-center flex-row gap-2">
         <Text className="text-3xl font-bold">Welcome with Tailwind!</Text>
         <HelloWave />
+      </ThemedView>
+      <ThemedView className="items-center flex-row gap-2">
+        <Text className="text-3xl font-bold">
+          Translated text:
+          {" "}
+          {t("translationTest")}
+        </Text>
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
         <ThemedText type="subtitle">Step 1: Try it</ThemedText>

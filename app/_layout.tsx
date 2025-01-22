@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 
 import { useColorScheme } from "@/hooks/use-color-scheme";
+import "@/lib/i18n";
 
 import "../globals.css";
 
